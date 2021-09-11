@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Anatassia PortFolio</title> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <link href = "https://fonts.googleapis.com/css?family=Hina Mincho" rel="stylesheet" type="text/css">
+    <style>
+
+body, html{
+    font-family: 'Hina Mincho';
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+    background-color: #EAEAEA;
+    }
+
+
+.TopNav {
+    overflow: hidden;
+    background-color: #B0C4DE;
+    }
+
+.TopNav a {
+  float: left;
+  color: white;
+  text-align:right;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  position: relative;
+}
+
+.TopNav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.TopNav a.active {
+  background-color: #708090;
+  color: white;
+}
+
+.home{
+  color:white;
+  position: relative;
+  text-align:right;
+}
+.tulisan{
+  font-size: 40px;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.bg-img {
+  /* The image used */
+  background-image: url("https://images.unsplash.com/photo-1422207258071-70754198c4a2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1641&q=80");
+
+  min-height: 500px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.about{
+    font-size:24px;
+    text-align:center;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+.skill {
+  place-items: center;
+  box-sizing: border-box;
+  align-items:center;
+  justify-content: center;
+  width: 50%;
+  min-width: 600px;
+  padding: 0 20px;
+}
+.skill-name{
+  
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: black;
+  margin: 20px 0;
+}
+
+.mybar{
+  
+  height: 14px;
+  background:black ;
+  border-radius: 3px;
+}
+
+.skill-per{
+  
+  height: 12px;
+  background: wheat;
+  border-radius: 3px;
+  position: relative;
+
+}
+
+.skill-per::before{
+  content: attr(per);
+  position: absolute;
+  padding: 4px 6px;
+  background: white;
+  border-radius: 4px;
+  font-size: 12px;
+  top: -35px;
+  right: 0;
+  transform: translate(50%);
+}
+
+.skill-per::after{
+  content: attr(per);
+  position: absolute;
+  padding: 4px 6px;
+  background: white;
+  border-radius: 4px;
+  font-size: 12px;
+  top: -35px;
+  right: 0;
+  transform: translate(50%);
+}
+
+.skill-per1{
+  
+  height: 12px;
+  background: rgb(248, 220, 242);
+  border-radius: 3px;
+  position: relative;
+
+}
+
+.skill-per1::before{
+  content: attr(per);
+  position: absolute;
+  padding: 4px 6px;
+  background: white;
+  border-radius: 4px;
+  font-size: 12px;
+  top: -35px;
+  right: 0;
+  transform: translate(50%);
+}
+
+.skill-per1::after{
+  content: attr(per);
+  position: absolute;
+  padding: 4px 6px;
+  background: white;
+  border-radius: 4px;
+  font-size: 12px;
+  top: -35px;
+  right: 0;
+  transform: translate(50%);
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.portfolio{
+  font-size: 24px;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 50px;
+  background-color:#B0C4DE;
+  padding: 50px;
+}
+
+.grid > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
+}
+    </style>
+<body>
+  
+    <div class = TopNav id="myHeader">
+        <a class="active" href="#bg-img">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#portfolio">My Portfolio</a>
+        </div>
+      </div>
+    </div>
+
+<div class="home" id="home">
+  <div class="tulisan" id="tulisan">
+<h1>Anatassia Portfolio</h1>
+  </div>
+  <div class="bg-img" id="bg-img"></div>
+</div>
+
+    <!--Content About Me-->
+    <div class ="about" id="about">
+    <h3>ABOUT ME</h3>
+    <p><b>NOR ANATASSIA RISQAH BINTI MOKHTAR</b></p><br>
+    <img src="https://i.pinimg.com/originals/6a/73/3e/6a733e5c3452f37699348c4999ce3bab.png"  alt="Photo of Me" width="500" height="333">
+    <p>I am a committed, hardworking, and motivated individual with background in computer system security.
+      I student from UniKL with Bachelor Info.Tech (Hons) Computer System Security. My previous study also in UniKL majoring engineering 
+    Computer and Networking.</p>
+
+    </div>
+
+    <p><b><h2>Programming Skills</h2></b></p>
+
+    
+    <div class="skill" id="skill">
+    <div class="skill-name">HTML</div>
+    <div class="mybar">
+    <div class="skill-per" per="70%" style="max-width:70%">
+    </div>
+    </div>
+    </div>
+
+    <div class="skill" id="skill">
+      <div class="skill-name">CSS</div>
+      <div class="mybar">
+      <div class="skill-per" per="60%" style="max-width:60%">
+      </div>
+      </div>
+      </div>
+
+    <div class="skill" id="skill">
+      <div class="skill-name">PYTHON</div>
+      <div class="mybar">
+      <div class="skill-per" per="60%" style="max-width:60%">
+      </div>
+      </div>
+      </div>
+
+    <div class="skill" id="skill">
+      <div class="skill-name">JAVA</div>
+      <div class="mybar">
+      <div class="skill-per" per="30%" style="max-width:30%">
+      </div>
+      </div>
+      </div>
+
+    <div class="skill" id="skill">
+        <div class="skill-name">PHP</div>
+        <div class="mybar">
+        <div class="skill-per" per="70%" style="max-width:70%">
+        </div>
+        </div>
+        </div>
+
+    <div class="skill" id="skill">
+        <div class="skill-name">MYSQL</div>
+        <div class="mybar">
+        <div class="skill-per" per="40%" style="max-width:40%">
+        </div>
+        </div>
+        </div>
+
+
+
+
+    <p><b><h2>Computer Skills</h2></b></p>
+
+    
+    <div class="skill" id="skill">
+    <div class="skill-name">Microsoft Word</div>
+    <div class="mybar">
+    <div class="skill-per1" per="80%" style="max-width:80%">
+    </div>
+    </div>
+    </div>
+
+    <div class="skill" id="skill">
+      <div class="skill-name">Microsoft PowerPoint</div>
+      <div class="mybar">
+      <div class="skill-per1" per="80%" style="max-width:80%">
+      </div>
+      </div>
+      </div>
+
+    <div class="skill" id="skill">
+      <div class="skill-name">Microsoft Excel</div>
+      <div class="mybar">
+      <div class="skill-per1" per="40%" style="max-width:40%">
+      </div>
+      </div>
+      </div>
+
+
+
+<!--Content My Contact-->
+<div class="portfolio" id="portfolio">
+  <h3>MY PORTFOLIO</h3>
+<div class="grid">
+  <div>Project1</div>
+  <div>Project2</div>
+  <div>Project3</div>  
+  <div>Project4</div>
+  <div>Project5</div>
+  <div>Project6</div>
+  <div>Project7</div>
+  <div>Project8</div>
+</div>
+
+
+</body>
+<script>
+  window.onscroll = function() {myFunction()};
+  
+  var header = document.getElementById("myHeader");
+  var sticky = header.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  }
+  </script>
+</html>
